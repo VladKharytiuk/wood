@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travellian</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="header">
+      <ul class="header__items container">
+        <li href="#">
+          <svg class="svg-icon logo">
+            <use href="./images/symbol-defs.svg#icon-logo"></use>
+          </svg>
+        </li>
+        <li>
+          <svg class="svg-icon hamburger">
+            <use href="./images/symbol-defs.svg#icon-hamburger"></use>
+          </svg>
+        </li>
+      </ul>
+      <h1 class="main-title container">
+        Start your unforgettable journey with us.
+      </h1>
+      <p class="main-subtitle container">
+        The best travel for your jouney begins now
+      </p>
+      <div class="container">
+        <form class="booking-form">
+          <label>
+            DESTINATION
+            <div>
+              <select name="destination">
+                <option>Dubai</option>
+              </select>
+            </div>
+          </label>
+          <label>
+            PERSON
+            <div>
+              <select name="person">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+              </select>
+            </div>
+          </label>
+          <label>
+            CHECK IN
+            <div>
+              <select name="date" id="date">
+                <input type="date" name="checkin" required />
+              </select>
+            </div>
+          </label>
+          <label>
+            CHECK OUT
+            <div>
+              <select name="date" id="date">
+                <input type="date" name="checkout" required />
+              </select>
+            </div>
+          </label>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
