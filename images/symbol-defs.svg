@@ -1,5 +1,11 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
+<symbol id="icon-left" viewBox="0 0 17 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.9091" d="M1.455 30.545l14.545-14.545-14.545-14.545"></path>
+</symbol>
+<symbol id="icon-right" viewBox="0 0 17 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.9091" d="M16 1.455l-14.545 14.545 14.545 14.545"></path>
+</symbol>
 <symbol id="icon-rating" viewBox="0 0 181 32">
 <path fill="#ffc107" style="fill: var(--color1, #ffc107)" d="M16 2.667l4.12 8.347 9.213 1.347-6.667 6.493 1.573 9.173-8.24-4.333-8.24 4.333 1.573-9.173-6.667-6.493 9.213-1.347 4.12-8.347z"></path>
 <path fill="#ffc107" style="fill: var(--color1, #ffc107)" d="M53.333 2.667l4.12 8.347 9.213 1.347-6.667 6.493 1.573 9.173-8.24-4.333-8.24 4.333 1.573-9.173-6.667-6.493 9.213-1.347 4.12-8.347z"></path>

@@ -18,21 +18,25 @@
   </head>
   <body>
     <div class="header">
-      <ul class="header__items container">
-        <li href="#">
-          <svg class="svg-icon logo">
-            <use href="./images/symbol-defs.svg#icon-logo"></use>
-          </svg>
-        </li>
-        <li>
-          <svg class="svg-icon hamburger">
-            <use href="./images/symbol-defs.svg#icon-hamburger"></use>
-          </svg>
-        </li>
-      </ul>
-      <h1 class="main-title container">
-        Start your unforgettable journey with us.
-      </h1>
+      <header>
+        <ul class="header__items container">
+          <li href="#">
+            <svg class="svg-icon logo">
+              <use href="./images/symbol-defs.svg#icon-logo"></use>
+            </svg>
+          </li>
+          <li>
+            <button class="header__button">
+              <svg class="svg-icon hamburger">
+                <use href="./images/symbol-defs.svg#icon-hamburger"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </header>
+      <div class="container">
+        <h1 class="main-title">Start your unforgettable journey with us.</h1>
+      </div>
       <p class="main-subtitle container">
         The best travel for your jouney begins now
       </p>
@@ -59,14 +63,24 @@
               </select>
             </div>
           </label>
-          <label>
+          <div class="form-group">
+            <label>CHECK IN</label>
+            <div>
+              <select name="date" id="date">
+                <option>
+                  <input type="date" id="checkIn" value="2020-09-17" />
+                </option>
+              </select>
+            </div>
+          </div>
+          <!-- <label>
             CHECK IN
             <div>
               <select name="date" id="date">
                 <input type="date" name="checkin" required />
               </select>
             </div>
-          </label>
+          </label> -->
           <label>
             CHECK OUT
             <div>
@@ -76,6 +90,37 @@
             </div>
           </label>
         </form>
+        <button class="main-button">
+          Book Now<svg class="svg-arrow">
+            <use href="./images/symbol-defs.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="sub-container destination-section">
+      <h2 class="destination-title">Popular Destinations</h2>
+      <p class="destination-subtitle">
+        Most popular destinations around the world, from historical places to
+        natural wonders.
+      </p>
+      <div class="add-container photo-section">
+        <div class="photo-description">
+          <div class="berlin-title">Monument of Berlin</div>
+          <p class="berlin-subtitle">
+            <svg class="svg-location">
+              <use href="/images/symbol-defs.svg#icon-location"></use>
+            </svg>
+            Berlin, Germany
+          </p>
+        </div>
+      </div>
+      <div>
+        <button>
+          <svg><use href=""></use></svg>
+        </button>
+        <button>
+          <svg><use></use></svg>
+        </button>
       </div>
     </div>
   </body>
