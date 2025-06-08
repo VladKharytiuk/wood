@@ -14,6 +14,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -63,30 +64,22 @@
               </select>
             </div>
           </label>
-          <div class="form-group">
-            <label>CHECK IN</label>
-            <div>
-              <select name="date" id="date">
-                <option>
-                  <input type="date" id="checkIn" value="2020-09-17" />
-                </option>
-              </select>
-            </div>
-          </div>
-          <!-- <label>
-            CHECK IN
-            <div>
-              <select name="date" id="date">
-                <input type="date" name="checkin" required />
-              </select>
-            </div>
-          </label> -->
+          <label
+            >CHECK IN
+            <div class="date-picker-wrapper">
+              <input type="date" class="date-input-real" />
+              <div class="date-input-custom">
+                <span class="date-label"></span>
+              </div></div
+          ></label>
+
           <label>
             CHECK OUT
-            <div>
-              <select name="date" id="date">
-                <input type="date" name="checkout" required />
-              </select>
+            <div class="date-picker-wrapper">
+              <input type="date" class="date-input-real" />
+              <div class="date-input-custom">
+                <span class="date-label"></span>
+              </div>
             </div>
           </label>
         </form>
@@ -132,26 +125,204 @@
       <p class="destination-subtitle">
         Check out our special offer and discounts
       </p>
-
-      <div class="offer-container lisbon-section"></div>
-      <div class="lisbon-description">
-        <div class="lisbon-header">
-          <p class="lisbon-title">Lisbon, Portugal</p>
+      <div class="lisbon-container">
+        <div class="offer-container lisbon-section"></div>
+        <div class="lisbon-description">
+          <div class="lisbon-header">
+            <p class="lisbon-title">Lisbon, Portugal</p>
+            <svg class="svg-rating">
+              <use href="./images/symbol-defs.svg#icon-rating"></use>
+            </svg>
+          </div>
+          <p class="lisbon-text">
+            5 nights and 4 days in 5 star hotel, breakfast and lunch included.
+            Very popular during the renaissance. Passage and going through the
+            cites of the world in classical literature.
+          </p>
+          <div class="lisbon-price">
+            <div>From</div>
+            <span>€500</span>
+          </div>
+          <button class="lisbon-btn">Details</button>
+        </div>
+        <div class="button-container">
+          <button class="button back-btn">
+            <svg class="arrow right-arrow">
+              <use href="./images/symbol-defs.svg#icon-right"></use>
+            </svg>
+          </button>
+          <button class="button next-btn">
+            <svg width="20" height="10" class="arrow left-arrow">
+              <use href="./images/symbol-defs.svg#icon-left"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="blog-section sub-container">
+        <h2 class="blog-title">Our Blog</h2>
+        <p class="blog-subtitle">
+          An insight the incredible experience in the world
+        </p>
+        <img
+          class="blog-photo"
+          src="./images/beach.jpg"
+          alt="beach"
+          height="314"
+          width="100%"
+        />
+        <h2 class="italy-title">Beautiful Italy Let’s travel</h2>
+        <p class="italy-text">
+          But I must explain to you how all this mistaken idea of denouncing
+          pleasure and praising pain was born and I will give you a complete
+          account of the system and expound the actual teachings of the great
+          explorer of the truth, the master- builder of human happiness. No one
+          rejects, dislike, or avoids plasure itself, because it is pleasure,
+          but because those who do not know how to pursue pleasure rationally
+          encounter consequences that are extremly painful. Nor again is there
+          anyone who loves or pursues.
+        </p>
+        <button class="blog-btn">
+          Read More<svg class="svg-arrow-right" width="27">
+            <use href="./images/symbol-defs.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="trip-planners">
+        <h2 class="trip-title">Trip Planners</h2>
+        <p class="sub-title-trip">
+          20 years from now you will be more disappointed by the things that you
+          didn’t do. Stop regretting and start travelling, start throwing off
+          the bowlines.
+        </p>
+        <div class="square-container">
+          <button class="trip-btn">
+            <div class="cubic-top cubic"></div>
+            <div class="cubic-bottom cubic"></div>
+            View all trip plans
+          </button>
+        </div>
+        <ul class="trip-list">
+          <li class="trip-description">
+            <img src="./images/coli.jpg" />
+            <div class="guide-thumb">
+              <div class="guide-tour">
+                <p>Guided Tour</p>
+                <span>€99/Day</span>
+              </div>
+              <h3 class="guide-title">Rome City Tour</h3>
+              <div class="guide-duration">
+                <p>
+                  <svg class="svg-rating">
+                    <use href="./images/symbol-defs.svg#icon-rating"></use>
+                  </svg>
+                </p>
+                <span class="guide-days">7 Days tour</span>
+              </div>
+            </div>
+          </li>
+          <li class="trip-description">
+            <img src="./images/eiffel.jpg" />
+            <div class="guide-thumb">
+              <div class="guide-tour">
+                <p>Guided Tour</p>
+                <span>€95/Day</span>
+              </div>
+              <h3 class="guide-title">Paris City Tour</h3>
+              <div class="guide-duration">
+                <p>
+                  <svg class="svg-rating">
+                    <use href="./images/symbol-defs.svg#icon-rating"></use>
+                  </svg>
+                </p>
+                <span class="guide-days">7 Days tour</span>
+              </div>
+            </div>
+          </li>
+          <li class="trip-description">
+            <img src="./images/rome.jpg" />
+            <div class="guide-thumb">
+              <div class="guide-tour">
+                <p>Guided Tour</p>
+                <span>€89/Day</span>
+              </div>
+              <h3 class="guide-title">Barcelona City Tour</h3>
+              <div class="guide-duration">
+                <p>
+                  <svg class="svg-rating">
+                    <use href="./images/symbol-defs.svg#icon-rating"></use>
+                  </svg>
+                </p>
+                <span class="guide-days">7 Days tour</span>
+              </div>
+            </div>
+          </li>
+          <li class="trip-description">
+            <img src="./images/budapest.jpg" />
+            <div class="guide-thumb">
+              <div class="guide-tour">
+                <p>Guided Tour</p>
+                <span>€89/Day</span>
+              </div>
+              <h3 class="guide-title">Budapest City Tour</h3>
+              <div class="guide-duration">
+                <p>
+                  <svg class="svg-rating">
+                    <use href="./images/symbol-defs.svg#icon-rating"></use>
+                  </svg>
+                </p>
+                <span class="guide-days">7 Days tour</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="gallery padding-container">
+        <h2 class="gallery-title">Destination Gallery</h2>
+        <p class="gallery-subtitle">Our photo gallery on trip</p>
+        <ul class="gallery-list add-container">
+          <li><img src="./images/hipster.jpg" alt="long-hair man" /></li>
+          <li><img src="./images/sand.jpg" alt="men on the beach" /></li>
+          <li><img src="./images/street.jpg" alt="a girl between houses" /></li>
+          <li><img src="./images/man.jpg" alt="man and railway" /></li>
+        </ul>
+        <div class="button-container">
+          <button class="button back-btn">
+            <svg class="arrow right-arrow">
+              <use href="./images/symbol-defs.svg#icon-right"></use>
+            </svg>
+          </button>
+          <button class="button next-btn">
+            <svg width="20" height="10" class="arrow left-arrow">
+              <use href="./images/symbol-defs.svg#icon-left"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="travel">
+        <h2 class="travel-title">Traveler’s Experiences</h2>
+        <p class="travel-subtitle">
+          Here some awesome feedback from our travelers
+        </p>
+        <div class="travel-feedback add-container">
+          <p class="travel-feedback__text">
+            But I must explain to you how all this mistaken idea of denouncing
+            pleasure and praising pain was born and I will give you a complete
+            account of the system and expound the actual teachings of the great
+            explorer of the truth, the master- builder of human happiness.
+          </p>
           <svg class="svg-rating">
             <use href="./images/symbol-defs.svg#icon-rating"></use>
           </svg>
+          <div class="travel-feedback__author">
+            <h3>John Doe</h3>
+            <p>Accountant</p>
+          </div>
+          <div class="travel-avatar">
+            <img src="./images/Avatar.jpg" alt="John Doe" />
+          </div>
         </div>
-        <p class="lisbon-text">
-          5 nights and 4 days in 5 star hotel, breakfast and lunch included.
-          Very popular during the renaissance. Passage and going through the
-          cites of the world in classical literature.
-        </p>
-        <div class="lisbon-price">
-          <div>From</div>
-          <span>€500</span>
-        </div>
-        <button class="lisbon-btn">Details</button>
       </div>
     </div>
   </body>
+  <script src="./js/date.js"></script>
 </html>

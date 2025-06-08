@@ -15,6 +15,10 @@
   margin-top: 100px;
   margin-bottom: 100px;
 }
+.padding-container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
 *,
 *::before,
 *::after {
@@ -142,6 +146,48 @@ li {
   -moz-appearance: none;
   cursor: pointer;
 }
+.date-input-real {
+  position: fixed;
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.date-input-custom {
+  width: 100%;
+  padding: 15px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+  font-size: 16px;
+  color: #333;
+  background: #fff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  text-align: left;
+}
+
+.date-input-custom::after {
+  content: "📅";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+.date-label {
+  font-family: Playfair Display, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0em;
+  color: rgba(23, 36, 50, 1);
+  text-transform: capitalize;
+}
 .main-button {
   display: flex;
   align-items: baseline;
@@ -250,6 +296,7 @@ li {
   padding-right: 16px;
   margin-top: 60px;
 }
+
 .lisbon-section {
   overflow: hidden;
   background-image: url("/images/lisbon.jpg");
@@ -265,6 +312,7 @@ li {
   background-color: rgba(255, 248, 241, 1);
   border-bottom-right-radius: 26px;
   border-bottom-left-radius: 26px;
+  margin-bottom: 60px;
 }
 .lisbon-title {
   font-family: Muli, sans-serif;
@@ -328,4 +376,220 @@ li {
   letter-spacing: 0em;
   text-transform: uppercase;
   cursor: pointer;
+}
+/* BLOG SECTION */
+.blog-section {
+  padding: 0;
+}
+.blog-title {
+  padding-bottom: 20px;
+  border-bottom: 3px solid rgba(255, 119, 87, 1);
+  width: 159px;
+}
+.blog-subtitle {
+  margin-top: 32px;
+  color: rgba(118, 126, 134, 1);
+}
+.blog-photo {
+  margin-top: 100px;
+  margin-bottom: 32px;
+}
+.italy-title {
+  width: 288px;
+}
+.italy-text {
+  font-family: Rubik, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 42px;
+  letter-spacing: 0em;
+  color: rgba(23, 36, 50, 1);
+  padding-top: 32px;
+  padding-bottom: 24px;
+  text-align: left;
+}
+.blog-btn {
+  font-family: Rubik, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 52px;
+  background-color: transparent;
+  letter-spacing: 0em;
+  color: rgba(255, 119, 87, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  gap: 20px;
+  height: 52px;
+  cursor: pointer;
+}
+.svg-arrow-right {
+  fill: rgba(255, 119, 87, 1);
+}
+/* Trip Planners */
+
+.trip-title {
+  padding-bottom: 20px;
+  border-bottom: 3px solid rgba(255, 119, 87, 1);
+  width: 246px;
+}
+.sub-title-trip {
+  font-family: Rubik, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0em;
+  color: rgba(118, 126, 134, 1);
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.square-container {
+  margin-bottom: 80px;
+  height: 75.5px;
+}
+.cubic {
+  width: 43px;
+  height: 43px;
+}
+.trip-btn {
+  position: relative;
+  background-color: rgba(255, 119, 87, 1);
+  font-family: Rubik, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0em;
+  color: rgba(255, 255, 255, 1);
+  padding: 20px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  margin-left: 14px;
+}
+.cubic-top {
+  z-index: -1;
+  top: -14.5px;
+  left: -14px;
+  position: absolute;
+  background-color: rgba(23, 36, 50, 1);
+}
+.cubic-bottom {
+  z-index: -1;
+  bottom: -18px;
+  right: -16px;
+  position: absolute;
+  background-color: rgba(118, 126, 134, 1);
+}
+
+.guide-thumb {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  gap: 12px;
+  margin-right: auto;
+}
+.guide-tour {
+  font-family: Rubik, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0em;
+  text-transform: uppercase;
+  color: rgba(23, 36, 50, 1);
+  display: flex;
+  justify-content: space-between;
+}
+.guide-title {
+  font-family: Playfair Display, sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 0em;
+  color: rgba(23, 36, 50, 1);
+}
+.guide-duration {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.guide-days {
+  font-family: Rubik, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0em;
+  text-transform: uppercase;
+  color: rgba(23, 36, 50, 1);
+}
+.guide-thumb:last-child {
+  margin-bottom: 80px;
+}
+/* GALLERY */
+.gallery-title {
+  padding-bottom: 20px;
+  border-bottom: 3px solid rgba(255, 119, 87, 1);
+  width: 288px;
+}
+.gallery-subtitle {
+  margin-top: 32px;
+  color: rgba(118, 126, 134, 1);
+}
+.gallery-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+/* Traveler’s Experiences */
+.travel-title {
+  padding-bottom: 20px;
+  border-bottom: 3px solid rgba(255, 119, 87, 1);
+  width: auto;
+}
+.travel-subtitle {
+  margin-top: 32px;
+  color: rgba(118, 126, 134, 1);
+}
+.travel-feedback {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  gap: 20px;
+  background-color: rgba(245, 246, 247, 1);
+  padding: 60px 20px 32px 20px;
+}
+.travel-feedback__text {
+  font-family: Rubik, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0em;
+  color: rgba(118, 126, 134, 1);
+}
+.travel-feedback__author {
+  & h3 {
+    font-family: Playfair Display, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0em;
+    color: rgba(118, 126, 134, 1);
+    margin-bottom: 4px;
+  }
+  & p {
+    font-family: Rubik, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0em;
+    color: rgba(118, 126, 134, 1);
+  }
+}
+.travel-avatar {
+  overflow: hidden;
+  position: absolute;
+  top: -65px;
+  left: 20px;
 }
