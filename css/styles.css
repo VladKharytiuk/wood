@@ -33,6 +33,14 @@ h2 {
   line-height: 100%;
   letter-spacing: 0em;
 }
+h4 {
+  font-family: Rubik, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0em;
+  color: rgba(255, 255, 255, 1);
+}
 p {
   font-family: Rubik, sans-serif;
   font-weight: 400;
@@ -651,4 +659,9 @@ li {
   border: none;
   cursor: pointer;
   border-radius: 12px;
+}
+/* FOOTER */
+.footer {
+  background-color: rgba(23, 36, 50, 1);
+  padding: 80px 16px;
 }
