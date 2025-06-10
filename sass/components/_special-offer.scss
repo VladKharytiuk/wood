@@ -1,0 +1,89 @@
+.offer {
+  width: 241px;
+}
+.offer-container {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 60px;
+}
+
+.lisbon-section {
+  overflow: hidden;
+  background-image: url("/images/lisbon.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 286px;
+  width: 100%;
+  border-top-left-radius: 26px;
+  border-top-right-radius: 26px;
+}
+.lisbon-description {
+  padding: 20px;
+  background-color: rgba(255, 248, 241, 1);
+  border-bottom-right-radius: 26px;
+  border-bottom-left-radius: 26px;
+  margin-bottom: 60px;
+}
+.lisbon-title {
+  font-family: Muli, sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 0em;
+  color: rgba(118, 126, 134, 1);
+}
+.svg-rating {
+  width: 136px;
+  height: 24px;
+}
+.lisbon-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.lisbon-text {
+  font-family: Rubik, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0em;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  color: rgba(23, 36, 50, 1);
+}
+.lisbon-price {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  & div {
+    font-family: Rubik, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0em;
+    color: rgba(118, 126, 134, 1);
+  }
+  & span {
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0em;
+    color: rgba(255, 119, 87, 1);
+  }
+}
+.lisbon-btn {
+  margin-top: 20px;
+  background-color: rgba(255, 118, 84, 1);
+  padding: 16px 24px;
+  border: none;
+  border-radius: 12px;
+  color: rgba(255, 255, 255, 1);
+  font-family: Rubik, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0em;
+  text-transform: uppercase;
+  cursor: pointer;
+}

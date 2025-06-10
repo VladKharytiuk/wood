@@ -1,0 +1,32 @@
+.header {
+  background-image: url(/images/hero.jpg);
+  background-size: fill;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 100px;
+}
+.header__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 16px;
+  margin-right: 16px;
+  height: 98px;
+}
+.svg-icon {
+  fill: rgba(255, 255, 255, 1);
+}
+.logo {
+  width: 140px;
+  height: 27.5px;
+  cursor: pointer;
+}
+.hamburger {
+  width: 50px;
+  height: 50px;
+}
+.header__button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
