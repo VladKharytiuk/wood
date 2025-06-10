@@ -682,11 +682,13 @@ li {
   }
   & h4 {
     margin-bottom: 16px;
+    margin-top: 0;
   }
 }
 .svg-icon-footer {
   fill: rgba(255, 255, 255, 1);
   height: 45.61px;
+  width: 234px;
   margin-bottom: 16px;
 }
 .copyright {
