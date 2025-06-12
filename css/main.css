@@ -56,13 +56,6 @@ li {
   padding-right: 16px;
 }
 
-.sub-container {
-  margin-top: 80px;
-  margin-bottom: 80px;
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
 .add-container {
   margin-top: 100px;
   margin-bottom: 100px;
@@ -75,8 +68,10 @@ li {
 
 .header {
   background-image: url(/images/hero.jpg);
-  background-size: fill;
-  background-position: center;
+  background-size: cover;
+  width: 100%;
+  background-position: 100%;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   padding-bottom: 100px;
 }
@@ -91,9 +86,8 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 16px;
-  margin-right: 16px;
   height: 98px;
+  width: 100%;
 }
 
 .svg-icon {
@@ -104,6 +98,12 @@ li {
   width: 140px;
   height: 27.5px;
   cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 234px;
+    height: 45.608px;
+  }
 }
 
 .hamburger {
@@ -126,6 +126,12 @@ li {
   color: rgb(255, 255, 255);
   margin-top: 100px;
 }
+@media screen and (min-width: 768px) {
+  .main-title {
+    font-size: 54px;
+    width: 100%;
+  }
+}
 
 .main-subtitle {
   font-family: Rubik, sans-serif;
@@ -135,6 +141,11 @@ li {
   letter-spacing: 0em;
   color: rgb(255, 255, 255);
   margin-top: 16px;
+}
+@media screen and (min-width: 768px) {
+  .main-subtitle {
+    font-size: 20px;
+  }
 }
 
 .booking-form {
@@ -213,13 +224,14 @@ li {
 }
 
 .date-input-custom::after {
-  content: "📅";
+  content: "⌃";
+  rotate: 180deg;
   position: absolute;
-  right: 0;
-  top: 50%;
+  right: 5px;
+  top: 10%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .date-label {
@@ -288,7 +300,7 @@ li {
 }
 
 .svg-location {
-  fill: var(--main-color);
+  fill: rgb(255, 255, 255);
   width: 24px;
   height: 24px;
 }
