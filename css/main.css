@@ -8,6 +8,11 @@
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 h2 {
   font-family: Playfair Display, sans-serif;
   font-weight: 400;
@@ -172,7 +177,7 @@ button {
 .main-title {
   font-family: Playfair Display, sans-serif;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 35px;
   line-height: 100%;
   letter-spacing: 0em;
   color: rgb(255, 255, 255);
@@ -568,12 +573,7 @@ button {
   color: rgb(23, 36, 50);
   padding-top: 32px;
   padding-bottom: 24px;
-  text-align: left;
-}
-@media screen and (min-width: 768px) {
-  .italy-text {
-    text-align: start;
-  }
+  text-align: justify;
 }
 
 .blog-btn {

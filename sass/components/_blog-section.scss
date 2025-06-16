@@ -17,10 +17,8 @@
   color: rgba(23, 36, 50, 1);
   padding-top: 32px;
   padding-bottom: 24px;
-  text-align: left;
-  @media screen and (min-width: $tablet) {
-    text-align: start;
-  }
+  text-align: justify;
+ 
 }
 .blog-btn {
   font-family: Rubik, sans-serif;
