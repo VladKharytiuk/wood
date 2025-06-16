@@ -1,12 +1,7 @@
-.destination-title {
-  border-bottom: 3px solid rgba(255, 119, 87, 1);
-  width: 227px;
-  padding-bottom: 20px;
+.destination-section{
+  padding-top: 80px;
 }
-.destination-subtitle {
-  margin-top: 32px;
-  color: rgba(118, 126, 134, 1);
-}
+
 .photo-section {
   position: relative;
   overflow: hidden;
@@ -16,6 +11,9 @@
   background-image: url("/images/berlin.jpg");
   background-position: center;
   background-size: cover;
+  @media screen and (min-width: $tablet) {
+    height: 456px;
+  }
 }
 .svg-location {
   fill: $main-color;

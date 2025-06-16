@@ -1,32 +1,26 @@
 .blog-section {
-  padding: 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
-.blog-title {
-  padding-bottom: 20px;
-  border-bottom: 3px solid rgba(255, 119, 87, 1);
-  width: 159px;
-}
-.blog-subtitle {
-  margin-top: 32px;
-  color: rgba(118, 126, 134, 1);
-}
+
 .blog-photo {
   margin-top: 100px;
   margin-bottom: 32px;
 }
-.italy-title {
-  width: 288px;
-}
+
 .italy-text {
   font-family: Rubik, sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 42px;
+  line-height: 24px;
   letter-spacing: 0em;
   color: rgba(23, 36, 50, 1);
   padding-top: 32px;
   padding-bottom: 24px;
   text-align: left;
+  @media screen and (min-width: $tablet) {
+    text-align: start;
+  }
 }
 .blog-btn {
   font-family: Rubik, sans-serif;

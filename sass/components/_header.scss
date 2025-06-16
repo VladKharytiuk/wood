@@ -13,6 +13,13 @@
   align-items: center;
   height: 98px;
   width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  & button:first-child {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
 }
 .svg-icon {
   fill: rgba(255, 255, 255, 1);
@@ -29,9 +36,8 @@
 .hamburger {
   width: 50px;
   height: 50px;
-}
-.header__button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
+  &:hover {
+    transform: rotate(-90deg);
+    transition: transform 250ms ease-in-out;
+  }
 }

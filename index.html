@@ -15,16 +15,17 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
 
-    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/main.min.css" />
   </head>
   <body>
     <div class="header">
       <header>
-        <ul class="header__items container">
-          <li href="#">
-            <svg class="svg-icon logo">
-              <use href="./images/symbol-defs.svg#icon-logo"></use>
-            </svg>
+        <ul class="header__items">
+          <li>
+            <a href="./index.html">
+              <svg class="svg-icon logo">
+                <use href="./images/symbol-defs.svg#icon-logo"></use></svg
+            ></a>
           </li>
           <li>
             <button class="header__button">
@@ -91,8 +92,8 @@
       </div>
     </div>
     <div class="container destination-section padding-container">
-      <h2 class="destination-title">Popular Destinations</h2>
-      <p class="destination-subtitle">
+      <h2 class="title">Popular Destinations</h2>
+      <p class="subtitle">
         Most popular destinations around the world, from historical places to
         natural wonders.
       </p>
@@ -121,11 +122,10 @@
       </div>
     </div>
     <div class="container">
-      <h2 class="destination-title offer">Special Offer</h2>
-      <p class="destination-subtitle">
-        Check out our special offer and discounts
-      </p>
       <div class="lisbon-container">
+        <h2 class="title offer">Special Offer</h2>
+        <p class="subtitle">Check out our special offer and discounts</p>
+
         <div class="offer-container lisbon-section"></div>
         <div class="lisbon-description">
           <div class="lisbon-header">
@@ -158,9 +158,9 @@
           </button>
         </div>
       </div>
-      <div class="blog-section container">
-        <h2 class="blog-title">Our Blog</h2>
-        <p class="blog-subtitle">
+      <div class="blog-section">
+        <h2 class="title">Our Blog</h2>
+        <p class="subtitle">
           An insight the incredible experience in the world
         </p>
         <img
@@ -168,7 +168,6 @@
           src="./images/beach.jpg"
           alt="beach"
           height="314"
-          width="100%"
         />
         <h2 class="italy-title">Beautiful Italy Let’s travel</h2>
         <p class="italy-text">
@@ -188,8 +187,8 @@
         </button>
       </div>
       <div class="trip-planners">
-        <h2 class="trip-title">Trip Planners</h2>
-        <p class="sub-title-trip">
+        <h2 class="title">Trip Planners</h2>
+        <p class="subtitle">
           20 years from now you will be more disappointed by the things that you
           didn’t do. Stop regretting and start travelling, start throwing off
           the bowlines.
@@ -203,7 +202,7 @@
         </div>
         <ul class="trip-list">
           <li class="trip-description">
-            <img src="./images/coli.jpg" />
+            <img src="./images/coli.jpg" alt="coliseum" />
             <div class="guide-thumb">
               <div class="guide-tour">
                 <p>Guided Tour</p>
@@ -221,7 +220,7 @@
             </div>
           </li>
           <li class="trip-description">
-            <img src="./images/eiffel.jpg" />
+            <img src="./images/eiffel.jpg" alt="tower" />
             <div class="guide-thumb">
               <div class="guide-tour">
                 <p>Guided Tour</p>
@@ -239,7 +238,7 @@
             </div>
           </li>
           <li class="trip-description">
-            <img src="./images/rome.jpg" />
+            <img src="./images/rome.jpg" alt="rome" />
             <div class="guide-thumb">
               <div class="guide-tour">
                 <p>Guided Tour</p>
@@ -257,7 +256,7 @@
             </div>
           </li>
           <li class="trip-description">
-            <img src="./images/budapest.jpg" />
+            <img src="./images/budapest.jpg" alt="Budapest" />
             <div class="guide-thumb">
               <div class="guide-tour">
                 <p>Guided Tour</p>
@@ -276,13 +275,15 @@
           </li>
         </ul>
       </div>
-      <div class="gallery padding-container">
-        <h2 class="gallery-title">Destination Gallery</h2>
-        <p class="gallery-subtitle">Our photo gallery on trip</p>
+      <div class="gallery">
+        <h2 class="title">Destination Gallery</h2>
+        <p class="subtitle">Our photo gallery on trip</p>
         <ul class="gallery-list add-container">
           <li><img src="./images/hipster.jpg" alt="long-hair man" /></li>
           <li><img src="./images/sand.jpg" alt="men on the beach" /></li>
-          <li><img src="./images/street.jpg" alt="a girl between houses" /></li>
+          <li>
+            <img src="./images/street.jpg" alt="a girl between houses" />
+          </li>
           <li><img src="./images/man.jpg" alt="man and railway" /></li>
         </ul>
         <div class="button-container">
@@ -298,11 +299,9 @@
           </button>
         </div>
       </div>
-      <div class="travel">
-        <h2 class="travel-title">Traveler’s Experiences</h2>
-        <p class="travel-subtitle">
-          Here some awesome feedback from our travelers
-        </p>
+      <div class="travel pad-container">
+        <h2 class="title">Traveler’s Experiences</h2>
+        <p class="subtitle">Here some awesome feedback from our travelers</p>
         <div class="travel-feedback add-container">
           <p class="travel-feedback__text">
             But I must explain to you how all this mistaken idea of denouncing
@@ -334,25 +333,29 @@
           </button>
         </div>
       </div>
-      <div class="newsletter">
-        <p class="news-title">Our Newsletter</p>
-        <label for="mail" class="form-field">Email</label>
-        <input
-          class="form-input"
-          type="email"
-          name="mail"
-          placeholder="Enter your email"
-          id="mail"
-          required
-        />
-        <button class="subscribe-btn">Subscribe</button>
+      <div class="newsletter-section">
+        <div class="newsletter">
+          <h2 class="news-title">Our Newsletter</h2>
+          <label for="mail" class="form-field">Email</label>
+          <input
+            class="form-input"
+            type="email"
+            name="mail"
+            placeholder="Enter your email"
+            id="mail"
+            required
+          />
+          <button class="subscribe-btn">Subscribe</button>
+        </div>
       </div>
     </div>
     <footer class="footer">
       <div>
-        <svg class="svg-icon-footer">
-          <use href="./images/symbol-defs.svg#icon-logo"></use>
-        </svg>
+        <a href="./index.html" class="footer-logo" aria-label="Home">
+          <svg class="svg-icon-footer">
+            <use href="./images/symbol-defs.svg#icon-logo"></use>
+          </svg>
+        </a>
         <p class="copyright">Copyright © Travellian 2020 All rights reserved</p>
       </div>
       <div class="footer-site-nav">
@@ -388,7 +391,7 @@
           <ul class="social-media">
             <li>
               <svg class="footer-icon facebook">
-                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                <use href="./images/symbol-defs.svg#icon-facebook"></use>
               </svg>
             </li>
             <li>
@@ -402,14 +405,15 @@
               </svg>
             </li>
             <li>
-              <svg class="footer-icon">
-                <use href="./images/symbol-defs.svg#icon-twitter"></use>
-              </svg>
+              <a href="#">
+                <svg class="footer-icon">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use></svg
+              ></a>
             </li>
           </ul>
         </div>
       </div>
     </footer>
+    <script src="./js/date.js"></script>
   </body>
-  <script src="./js/date.js"></script>
 </html>

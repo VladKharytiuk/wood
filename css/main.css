@@ -11,7 +11,7 @@
 h2 {
   font-family: Playfair Display, sans-serif;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 28px;
   line-height: 100%;
   letter-spacing: 0em;
 }
@@ -51,9 +51,52 @@ li {
   list-style: none;
 }
 
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.subtitle {
+  margin-top: 32px;
+  color: rgb(118, 126, 134);
+}
+
+.title {
+  padding-bottom: 20px;
+  position: relative;
+}
+.title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 65%;
+  height: 3px;
+  background-color: rgb(255, 119, 87);
+}
+
 .container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
   padding-left: 16px;
   padding-right: 16px;
+}
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+  }
 }
 
 .add-container {
@@ -61,7 +104,7 @@ li {
   margin-bottom: 100px;
 }
 
-.padding-container {
+.pad-container {
   padding-top: 80px;
   padding-bottom: 80px;
 }
@@ -88,6 +131,13 @@ li {
           align-items: center;
   height: 98px;
   width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.header__items button:first-child {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .svg-icon {
@@ -110,11 +160,13 @@ li {
   width: 50px;
   height: 50px;
 }
-
-.header__button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
+.hamburger:hover {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
 }
 
 .main-title {
@@ -277,15 +329,8 @@ li {
   margin-right: 20px;
 }
 
-.destination-title {
-  border-bottom: 3px solid rgb(255, 119, 87);
-  width: 227px;
-  padding-bottom: 20px;
-}
-
-.destination-subtitle {
-  margin-top: 32px;
-  color: rgb(118, 126, 134);
+.destination-section {
+  padding-top: 80px;
 }
 
 .photo-section {
@@ -297,6 +342,11 @@ li {
   background-image: url("/images/berlin.jpg");
   background-position: center;
   background-size: cover;
+}
+@media screen and (min-width: 768px) {
+  .photo-section {
+    height: 456px;
+  }
 }
 
 .svg-location {
@@ -354,7 +404,7 @@ li {
 
 .button {
   width: 60px;
-  height: 60px;
+  height: 66px;
   border: none;
   border-radius: 12px;
   cursor: pointer;
@@ -374,8 +424,8 @@ li {
   height: 10px;
 }
 
-.offer {
-  width: 241px;
+.lisbon-container {
+  padding-top: 80px;
 }
 
 .offer-container {
@@ -401,6 +451,11 @@ li {
   border-bottom-right-radius: 26px;
   border-bottom-left-radius: 26px;
   margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .lisbon-description {
+    position: relative;
+  }
 }
 
 .lisbon-title {
@@ -437,6 +492,11 @@ li {
   margin-top: 24px;
   margin-bottom: 24px;
   color: rgb(23, 36, 50);
+}
+@media screen and (min-width: 768px) {
+  .lisbon-text {
+    font-size: 18px;
+  }
 }
 
 .lisbon-price {
@@ -480,20 +540,18 @@ li {
   text-transform: uppercase;
   cursor: pointer;
 }
+@media screen and (min-width: 768px) {
+  .lisbon-btn {
+    position: absolute;
+    right: 24px;
+    bottom: 20px;
+    margin: 0;
+  }
+}
 
 .blog-section {
-  padding: 0;
-}
-
-.blog-title {
-  padding-bottom: 20px;
-  border-bottom: 3px solid rgb(255, 119, 87);
-  width: 159px;
-}
-
-.blog-subtitle {
-  margin-top: 32px;
-  color: rgb(118, 126, 134);
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .blog-photo {
@@ -501,20 +559,21 @@ li {
   margin-bottom: 32px;
 }
 
-.italy-title {
-  width: 288px;
-}
-
 .italy-text {
   font-family: Rubik, sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 42px;
+  line-height: 24px;
   letter-spacing: 0em;
   color: rgb(23, 36, 50);
   padding-top: 32px;
   padding-bottom: 24px;
   text-align: left;
+}
+@media screen and (min-width: 768px) {
+  .italy-text {
+    text-align: start;
+  }
 }
 
 .blog-btn {
@@ -544,26 +603,13 @@ li {
   fill: rgb(255, 119, 87);
 }
 
-.trip-title {
-  padding-bottom: 20px;
-  border-bottom: 3px solid rgb(255, 119, 87);
-  width: 246px;
-}
-
-.sub-title-trip {
-  font-family: Rubik, sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 100%;
-  letter-spacing: 0em;
-  color: rgb(118, 126, 134);
-  margin-top: 32px;
-  margin-bottom: 32px;
+.trip-planners {
+  padding-top: 80px;
 }
 
 .square-container {
-  margin-bottom: 80px;
-  height: 75.5px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .cubic {
@@ -668,15 +714,8 @@ li {
   margin-bottom: 80px;
 }
 
-.gallery-title {
-  padding-bottom: 20px;
-  border-bottom: 3px solid rgb(255, 119, 87);
-  width: 288px;
-}
-
-.gallery-subtitle {
-  margin-top: 32px;
-  color: rgb(118, 126, 134);
+.gallery {
+  padding-top: 80px;
 }
 
 .gallery-list {
@@ -691,17 +730,6 @@ li {
 }
 
 /* Traveler’s Experiences */
-.travel-title {
-  padding-bottom: 20px;
-  border-bottom: 3px solid rgb(255, 119, 87);
-  width: auto;
-}
-
-.travel-subtitle {
-  margin-top: 32px;
-  color: rgb(118, 126, 134);
-}
-
 .travel-feedback {
   position: relative;
   display: -webkit-box;
@@ -758,6 +786,10 @@ li {
      object-fit: cover;
 }
 
+.newsletter-section {
+  padding-bottom: 80px;
+}
+
 .newsletter {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -773,14 +805,9 @@ li {
 }
 
 .news-title {
-  font-family: Playfair Display, sans-serif;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 100%;
-  letter-spacing: 0em;
   color: rgb(118, 126, 134);
-  width: 248px;
   margin-bottom: 60px;
+  width: auto;
 }
 
 .form-field {
@@ -854,10 +881,11 @@ li {
   letter-spacing: 0em;
   color: rgb(255, 255, 255);
   background-color: rgb(255, 119, 87);
-  padding: 24.5px 77.5px;
   border: none;
   cursor: pointer;
   border-radius: 12px;
+  width: 100%;
+  height: 73px;
 }
 
 .footer {

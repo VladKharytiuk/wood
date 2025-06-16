@@ -1,5 +1,5 @@
-.offer {
-  width: 241px;
+.lisbon-container {
+  padding-top: 80px;
 }
 .offer-container {
   padding-left: 16px;
@@ -23,6 +23,9 @@
   border-bottom-right-radius: 26px;
   border-bottom-left-radius: 26px;
   margin-bottom: 60px;
+  @media screen and (min-width: $tablet) {
+    position: relative;
+  }
 }
 .lisbon-title {
   font-family: Muli, sans-serif;
@@ -50,6 +53,9 @@
   margin-top: 24px;
   margin-bottom: 24px;
   color: rgba(23, 36, 50, 1);
+  @media screen and (min-width: $tablet) {
+    font-size: 18px;
+  }
 }
 .lisbon-price {
   display: flex;
@@ -86,4 +92,10 @@
   letter-spacing: 0em;
   text-transform: uppercase;
   cursor: pointer;
+  @media screen and (min-width: $tablet) {
+    position: absolute;
+    right: 24px;
+    bottom: 20px;
+    margin: 0;
+  }
 }
