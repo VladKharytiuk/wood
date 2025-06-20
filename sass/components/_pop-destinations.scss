@@ -1,4 +1,4 @@
-.destination-section{
+.destination-section {
   padding-top: 80px;
 }
 
@@ -13,6 +13,7 @@
   background-size: cover;
   @media screen and (min-width: $tablet) {
     height: 456px;
+    ;
   }
 }
 .svg-location {
@@ -28,6 +29,9 @@
   bottom: 40px;
   left: 20px;
   color: rgba(255, 255, 255, 1);
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 }
 .berlin-title {
   font-family: Playfair Display, sans-serif;

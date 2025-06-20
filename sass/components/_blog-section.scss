@@ -7,7 +7,11 @@
   margin-top: 100px;
   margin-bottom: 32px;
 }
-
+.italy-title {
+  @media screen and (min-width: $tablet) {
+    font-size: 54px;
+  }
+}
 .italy-text {
   font-family: Rubik, sans-serif;
   font-weight: 400;
@@ -18,7 +22,9 @@
   padding-top: 32px;
   padding-bottom: 24px;
   text-align: justify;
- 
+  @media screen and (min-width: $tablet) {
+    line-height: 42px;
+  }
 }
 .blog-btn {
   font-family: Rubik, sans-serif;

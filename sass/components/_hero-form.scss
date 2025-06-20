@@ -7,6 +7,10 @@
   flex-direction: column;
   padding: 20px;
   gap: 40px;
+  @media screen and (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .booking-form label {
   font-family: Rubik, sans-serif;
@@ -75,7 +79,7 @@
 .date-label {
   font-family: Playfair Display, sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 100%;
   letter-spacing: 0em;
   color: rgba(23, 36, 50, 1);
@@ -100,6 +104,8 @@
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
   cursor: pointer;
+  @media screen and (min-width: $tablet) {
+  }
 }
 .svg-arrow {
   fill: rgba(255, 255, 255, 1);

@@ -1,0 +1,23 @@
+.subtitle {
+  margin-top: 32px;
+  color: rgba(118, 126, 134, 1);
+  @media screen and (min-width: $tablet) {
+    font-size: 20px;
+  }
+}
+.title {
+  padding-bottom: 20px;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 3px;
+    background-color: rgba(255, 119, 87, 1);
+  }
+  @media screen and (min-width: $tablet) {
+    font-size: 54px;
+  }
+}

@@ -92,7 +92,10 @@
       </div>
     </div>
     <div class="container destination-section padding-container">
-      <h2 class="title">Popular Destinations</h2>
+      <h2 class="title">
+        Popular<br />
+        Destinations
+      </h2>
       <p class="subtitle">
         Most popular destinations around the world, from historical places to
         natural wonders.
@@ -123,8 +126,10 @@
     </div>
     <div class="container">
       <div class="lisbon-container">
-        <h2 class="title offer">Special Offer</h2>
-        <p class="subtitle">Check out our special offer and discounts</p>
+        <div class="offer">
+          <h2 class="title">Special Offer</h2>
+          <p class="subtitle">Check out our special offer and discounts</p>
+        </div>
 
         <div class="offer-container lisbon-section"></div>
         <div class="lisbon-description">
@@ -163,13 +168,27 @@
         <p class="subtitle">
           An insight the incredible experience in the world
         </p>
-        <img
-          class="blog-photo"
-          src="./images/beach.jpg"
-          alt="beach"
-          height="314"
-        />
-        <h2 class="italy-title">Beautiful Italy Let’s travel</h2>
+        <div class="blog-photo">
+          <picture>
+            <source
+              srcset="
+                ./images/tablet/Italy.jpg    1x,
+                ./images/tablet/Italy@2x.jpg 2x
+              "
+              media="(min-width:1439px)"
+            />
+            <source
+              srcset="
+                ./images/tablet/Italy.jpg    1x,
+                ./images/tablet/Italy@2x.jpg 2x
+              "
+              media="(min-width:768px)"
+            />
+            <source srcset="./images/beach.jpg" media="(max-width:767px)" />
+            <img src="./images/beach.jpg" alt="beach" />
+          </picture>
+        </div>
+        <h2 class="italy-title">Beautiful Italy <br />Let’s travel</h2>
         <p class="italy-text">
           But I must explain to you how all this mistaken idea of denouncing
           pleasure and praising pain was born and I will give you a complete
@@ -202,7 +221,25 @@
         </div>
         <ul class="trip-list">
           <li class="trip-description">
-            <img src="./images/coli.jpg" alt="coliseum" />
+            <picture>
+              <source
+                srcset="
+                  ./images/tablet/Italy.jpg    1x,
+                  ./images/tablet/Italy@2x.jpg 2x
+                "
+                media="(min-width:1439px)"
+              />
+              <source
+                srcset="
+                  ./images/tablet/rome.jpg    1x,
+                  ./images/tablet/rome@2x.jpg 2x
+                "
+                media="(min-width:768px)"
+              />
+              <source srcset="./images/coli.jpg" media="(max-width:767px)" />
+              <img src="./images/coli.jpg" alt="coliseum" />
+            </picture>
+
             <div class="guide-thumb">
               <div class="guide-tour">
                 <p>Guided Tour</p>
@@ -220,7 +257,24 @@
             </div>
           </li>
           <li class="trip-description">
-            <img src="./images/eiffel.jpg" alt="tower" />
+            <picture>
+              <source
+                srcset="
+                  ./images/tablet/Italy.jpg    1x,
+                  ./images/tablet/Italy@2x.jpg 2x
+                "
+                media="(min-width:1439px)"
+              />
+              <source
+                srcset="
+                  ./images/tablet/Paris.jpg    1x,
+                  ./images/tablet/paris@2x.jpg 2x
+                "
+                media="(min-width:768px)"
+              />
+              <source srcset="./images/eiffel.jpg" media="(max-width:767px)" />
+              <img src="./images/eiffel.jpg" alt="tower" />
+            </picture>
             <div class="guide-thumb">
               <div class="guide-tour">
                 <p>Guided Tour</p>
@@ -238,7 +292,24 @@
             </div>
           </li>
           <li class="trip-description">
-            <img src="./images/rome.jpg" alt="rome" />
+            <picture>
+              <source
+                srcset="
+                  ./images/tablet/Italy.jpg    1x,
+                  ./images/tablet/Italy@2x.jpg 2x
+                "
+                media="(min-width:1439px)"
+              />
+              <source
+                srcset="
+                  ./images/tablet/barcelona.jpg    1x,
+                  ./images/tablet/barcelona@2x.jpg 2x
+                "
+                media="(min-width:768px)"
+              />
+              <source srcset="./images/rome.jpg" media="(max-width:767px)" />
+              <img src="./images/rome.jpg" alt="rome" />
+            </picture>
             <div class="guide-thumb">
               <div class="guide-tour">
                 <p>Guided Tour</p>
@@ -256,7 +327,24 @@
             </div>
           </li>
           <li class="trip-description">
-            <img src="./images/budapest.jpg" alt="Budapest" />
+            <picture>
+              <source
+                srcset="
+                  ./images/tablet/Italy.jpg    1x,
+                  ./images/tablet/Italy@2x.jpg 2x
+                "
+                media="(min-width:1439px)"
+              />
+              <source
+                srcset="
+                  ./images/tablet/budapest.jpg    1x,
+                  ./images/tablet/budapest@2x.jpg 2x
+                "
+                media="(min-width:768px)"
+              />
+              <source srcset="./images/budapest.jpg" media="(max-width:767px)" />
+              <img src="./images/budapest.jpg" alt="Budapest" />
+            </picture>
             <div class="guide-thumb">
               <div class="guide-tour">
                 <p>Guided Tour</p>
@@ -279,12 +367,86 @@
         <h2 class="title">Destination Gallery</h2>
         <p class="subtitle">Our photo gallery on trip</p>
         <ul class="gallery-list add-container">
-          <li><img src="./images/hipster.jpg" alt="long-hair man" /></li>
-          <li><img src="./images/sand.jpg" alt="men on the beach" /></li>
           <li>
-            <img src="./images/street.jpg" alt="a girl between houses" />
+            <picture>
+              <source
+                srcset="
+                  ./images/tablet/Italy.jpg    1x,
+                  ./images/tablet/Italy@2x.jpg 2x
+                "
+                media="(min-width:1439px)"
+              />
+              <source
+                srcset="
+                  ./images/tablet/long-hair.jpg    1x,
+                  ./images/tablet/long-hair@2x.jpg 2x
+                "
+                media="(min-width:768px)"
+              />
+              <source srcset="./images/hipster.jpg" media="(max-width:767px)" />
+              <img src="./images/hipster.jpg" alt="long-hair man" />
+            </picture>
           </li>
-          <li><img src="./images/man.jpg" alt="man and railway" /></li>
+          <li>
+            <picture>
+              <source
+                srcset="
+                  ./images/tablet/Italy.jpg    1x,
+                  ./images/tablet/Italy@2x.jpg 2x
+                "
+                media="(min-width:1439px)"
+              />
+              <source
+                srcset="
+                  ./images/tablet/men.jpg    1x,
+                  ./images/tablet/men@2x.jpg 2x
+                "
+                media="(min-width:768px)"
+              />
+              <source srcset="./images/sand.jpg" media="(max-width:767px)" />
+              <img src="./images/sand.jpg" alt="men on the beach" />
+            </picture>
+          </li>
+          <li>
+            <picture>
+              <source
+                srcset="
+                  ./images/tablet/Italy.jpg    1x,
+                  ./images/tablet/Italy@2x.jpg 2x
+                "
+                media="(min-width:1439px)"
+              />
+              <source
+                srcset="
+                  ./images/tablet/girl.jpg    1x,
+                  ./images/tablet/girl@2x.jpg 2x
+                "
+                media="(min-width:768px)"
+              />
+              <source srcset="./images/street.jpg" media="(max-width:767px)" />
+              <img src="./images/street.jpg" alt="a girl between houses" />
+            </picture>
+          </li>
+          <li>
+            <picture>
+              <source
+                srcset="
+                  ./images/tablet/Italy.jpg    1x,
+                  ./images/tablet/Italy@2x.jpg 2x
+                "
+                media="(min-width:1439px)"
+              />
+              <source
+                srcset="
+                  ./images/tablet/man.jpg    1x,
+                  ./images/tablet/man@2x.jpg 2x
+                "
+                media="(min-width:768px)"
+              />
+              <source srcset="./images/man.jpg" media="(max-width:767px)" />
+              <img src="./images/man.jpg" alt="man and railway" />
+            </picture>
+          </li>
         </ul>
         <div class="button-container">
           <button class="button back-btn">
@@ -320,7 +482,43 @@
             <img src="./images/Avatar.jpg" alt="John Doe" />
           </div>
         </div>
-        <div class="button-container">
+        <div class="travel-feedback">
+          <p class="travel-feedback__text">
+            But I must explain to you how all this mistaken idea of denouncing
+            pleasure and praising pain was born and I will give you a complete
+            account of the system and expound the actual teachings of the great
+            explorer of the truth, the master- builder of human happiness.
+          </p>
+          <svg class="svg-rating">
+            <use href="./images/symbol-defs.svg#icon-rating"></use>
+          </svg>
+          <div class="travel-feedback__author">
+            <h3>John Smith</h3>
+            <p>Journalist, HWO News</p>
+          </div>
+          <div class="travel-avatar">
+            <img src="./images/Smith.jpg" alt="John Smith" />
+          </div>
+        </div>
+        <div class="travel-feedback add-container">
+          <p class="travel-feedback__text">
+            But I must explain to you how all this mistaken idea of denouncing
+            pleasure and praising pain was born and I will give you a complete
+            account of the system and expound the actual teachings of the great
+            explorer of the truth, the master- builder of human happiness.
+          </p>
+          <svg class="svg-rating">
+            <use href="./images/symbol-defs.svg#icon-rating"></use>
+          </svg>
+          <div class="travel-feedback__author">
+            <h3>Tamara Bellis</h3>
+            <p>Managing Director, JTH</p>
+          </div>
+          <div class="travel-avatar">
+            <img src="./images/Bellis.jpg" alt="Tamara Bellis" />
+          </div>
+        </div>
+        <!-- <div class="button-container">
           <button class="button back-btn">
             <svg class="arrow right-arrow">
               <use href="./images/symbol-defs.svg#icon-right"></use>
@@ -331,7 +529,7 @@
               <use href="./images/symbol-defs.svg#icon-left"></use>
             </svg>
           </button>
-        </div>
+        </div> -->
       </div>
       <div class="newsletter-section">
         <div class="newsletter">
@@ -364,7 +562,9 @@
           <li><a href="./index.html">Home</a></li>
           <li><a href="#top">Destinations</a></li>
           <li><a href="#top">Trip Plans</a></li>
-          <li><a href="#">Blog</a></li>
+          <li>
+            <a href="https://webstudio-two.vercel.app/index.html">Blog</a>
+          </li>
           <li><a href="#">Contact Us</a></li>
         </ul>
       </div>

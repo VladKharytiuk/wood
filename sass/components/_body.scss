@@ -13,7 +13,7 @@ a {
 h2 {
   font-family: Playfair Display, sans-serif;
   font-weight: 400;
-  font-size: 28px;
+  font-size: 30px;
   line-height: 100%;
   letter-spacing: 0em;
 }
@@ -50,21 +50,4 @@ button {
   cursor: pointer;
   background: none;
   border: none;
-}
-.subtitle {
-  margin-top: 32px;
-  color: rgba(118, 126, 134, 1);
-}
-.title {
-  padding-bottom: 20px;
-  position: relative;
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 65%;
-    height: 3px;
-    background-color: rgba(255, 119, 87, 1);
-  }
 }

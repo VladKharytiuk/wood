@@ -16,6 +16,9 @@
   width: 100%;
   border-top-left-radius: 26px;
   border-top-right-radius: 26px;
+  @media screen and (min-width: $tablet) {
+    background-image: url("/images/tablet/lisbon.jpg");
+  }
 }
 .lisbon-description {
   padding: 20px;

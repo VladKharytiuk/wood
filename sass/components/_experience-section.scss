@@ -7,7 +7,10 @@
   border-radius: 12px;
   gap: 20px;
   background-color: rgba(245, 246, 247, 1);
-  padding: 60px 20px 32px 20px;
+  padding: 60px 20px 20px 20px;
+  @media screen and (min-width: $tablet) {
+    padding: 60px 40px 40px 40px;
+  }
 }
 .travel-feedback__text {
   font-family: Rubik, sans-serif;
@@ -16,6 +19,7 @@
   line-height: 23px;
   letter-spacing: 0em;
   color: rgba(118, 126, 134, 1);
+  text-align: justify;
 }
 .travel-feedback__author {
   & h3 {
