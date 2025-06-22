@@ -49,6 +49,11 @@
             <div>
               <select name="destination">
                 <option>Dubai</option>
+                <option>Italy</option>
+                <option>Portugal</option>
+                <option>United Kingdom</option>
+                <option>Spain</option>
+                <option>Budapest</option>
               </select>
             </div>
           </label>
@@ -168,42 +173,46 @@
         <p class="subtitle">
           An insight the incredible experience in the world
         </p>
-        <div class="blog-photo">
-          <picture>
-            <source
-              srcset="
-                ./images/tablet/Italy.jpg    1x,
-                ./images/tablet/Italy@2x.jpg 2x
-              "
-              media="(min-width:1439px)"
-            />
-            <source
-              srcset="
-                ./images/tablet/Italy.jpg    1x,
-                ./images/tablet/Italy@2x.jpg 2x
-              "
-              media="(min-width:768px)"
-            />
-            <source srcset="./images/beach.jpg" media="(max-width:767px)" />
-            <img src="./images/beach.jpg" alt="beach" />
-          </picture>
+        <div class="blog-desktop">
+          <div class="blog-photo">
+            <picture>
+              <source
+                media="(min-width:1440px)"
+                srcset="
+                  ./images/desktop/beach.jpg    1x,
+                  ./images/desktop/beach@2x.jpg 2x
+                "
+              />
+              <source
+                srcset="
+                  ./images/tablet/Italy.jpg    1x,
+                  ./images/tablet/Italy@2x.jpg 2x
+                "
+                media="(min-width:768px)"
+              />
+              <source srcset="./images/beach.jpg" media="(max-width:767px)" />
+              <img src="./images/desktop/beach.jpg" alt="beach" />
+            </picture>
+          </div>
+          <div>
+            <h2 class="italy-title">Beautiful Italy <br />Let’s travel</h2>
+            <p class="italy-text">
+              But I must explain to you how all this mistaken idea of denouncing
+              pleasure and praising pain was born and I will give you a complete
+              account of the system and expound the actual teachings of the
+              great explorer of the truth, the master- builder of human
+              happiness. No one rejects, dislike, or avoids plasure itself,
+              because it is pleasure, but because those who do not know how to
+              pursue pleasure rationally encounter consequences that are
+              extremly painful. Nor again is there anyone who loves or pursues.
+            </p>
+            <button class="blog-btn">
+              Read More<svg class="svg-arrow-right" width="27">
+                <use href="./images/symbol-defs.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
         </div>
-        <h2 class="italy-title">Beautiful Italy <br />Let’s travel</h2>
-        <p class="italy-text">
-          But I must explain to you how all this mistaken idea of denouncing
-          pleasure and praising pain was born and I will give you a complete
-          account of the system and expound the actual teachings of the great
-          explorer of the truth, the master- builder of human happiness. No one
-          rejects, dislike, or avoids plasure itself, because it is pleasure,
-          but because those who do not know how to pursue pleasure rationally
-          encounter consequences that are extremly painful. Nor again is there
-          anyone who loves or pursues.
-        </p>
-        <button class="blog-btn">
-          Read More<svg class="svg-arrow-right" width="27">
-            <use href="./images/symbol-defs.svg#icon-arrow"></use>
-          </svg>
-        </button>
       </div>
       <div class="trip-planners">
         <h2 class="title">Trip Planners</h2>
@@ -224,10 +233,10 @@
             <picture>
               <source
                 srcset="
-                  ./images/tablet/Italy.jpg    1x,
-                  ./images/tablet/Italy@2x.jpg 2x
+                  ./images/desktop/Coli.jpg    1x,
+                  ./images/desktop/Coli@2x.jpg 2x
                 "
-                media="(min-width:1439px)"
+                media="(min-width:1440px)"
               />
               <source
                 srcset="
@@ -260,10 +269,10 @@
             <picture>
               <source
                 srcset="
-                  ./images/tablet/Italy.jpg    1x,
-                  ./images/tablet/Italy@2x.jpg 2x
+                  ./images/desktop/eiffel.jpg    1x,
+                  ./images/desktop/eiffel@2x.jpg 2x
                 "
-                media="(min-width:1439px)"
+                media="(min-width:1440px)"
               />
               <source
                 srcset="
@@ -295,10 +304,10 @@
             <picture>
               <source
                 srcset="
-                  ./images/tablet/Italy.jpg    1x,
-                  ./images/tablet/Italy@2x.jpg 2x
+                  ./images/desktop/Barcelona.jpg    1x,
+                  ./images/desktop/Barcelona@2x.jpg 2x
                 "
-                media="(min-width:1439px)"
+                media="(min-width:1440px)"
               />
               <source
                 srcset="
@@ -330,10 +339,10 @@
             <picture>
               <source
                 srcset="
-                  ./images/tablet/Italy.jpg    1x,
-                  ./images/tablet/Italy@2x.jpg 2x
+                  ./images/desktop/eiffel.jpg    1x,
+                  ./images/desktop/eiffel@2x.jpg 2x
                 "
-                media="(min-width:1439px)"
+                media="(min-width:1440px)"
               />
               <source
                 srcset="
@@ -342,7 +351,10 @@
                 "
                 media="(min-width:768px)"
               />
-              <source srcset="./images/budapest.jpg" media="(max-width:767px)" />
+              <source
+                srcset="./images/budapest.jpg"
+                media="(max-width:767px)"
+              />
               <img src="./images/budapest.jpg" alt="Budapest" />
             </picture>
             <div class="guide-thumb">
@@ -371,10 +383,10 @@
             <picture>
               <source
                 srcset="
-                  ./images/tablet/Italy.jpg    1x,
-                  ./images/tablet/Italy@2x.jpg 2x
+                  ./images/desktop/hipster.jpg    1x,
+                  ./images/desktop/hipster@2x.jpg 2x
                 "
-                media="(min-width:1439px)"
+                media="(min-width:1440px)"
               />
               <source
                 srcset="
@@ -391,10 +403,10 @@
             <picture>
               <source
                 srcset="
-                  ./images/tablet/Italy.jpg    1x,
-                  ./images/tablet/Italy@2x.jpg 2x
+                  ./images/desktop/sand.jpg    1x,
+                  ./images/desktop/sand@2x.jpg 2x
                 "
-                media="(min-width:1439px)"
+                media="(min-width:1440px)"
               />
               <source
                 srcset="
@@ -411,10 +423,10 @@
             <picture>
               <source
                 srcset="
-                  ./images/tablet/Italy.jpg    1x,
-                  ./images/tablet/Italy@2x.jpg 2x
+                  ./images/desktop/girl.jpg    1x,
+                  ./images/desktop/girl@2x.jpg 2x
                 "
-                media="(min-width:1439px)"
+                media="(min-width:1440px)"
               />
               <source
                 srcset="
@@ -431,10 +443,10 @@
             <picture>
               <source
                 srcset="
-                  ./images/tablet/Italy.jpg    1x,
-                  ./images/tablet/Italy@2x.jpg 2x
+                  ./images/desktop/man.jpg    1x,
+                  ./images/desktop/man@2x.jpg 2x
                 "
-                media="(min-width:1439px)"
+                media="(min-width:1440px)"
               />
               <source
                 srcset="

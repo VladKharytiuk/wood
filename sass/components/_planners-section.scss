@@ -1,7 +1,13 @@
 .trip-planners {
   padding-top: 80px;
 }
-
+.trip-list {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+  }
+}
 .square-container {
   padding-top: 80px;
   padding-bottom: 80px;

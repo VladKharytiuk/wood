@@ -3,6 +3,11 @@
   flex-direction: column;
   background-color: rgba(23, 36, 50, 1);
   padding: 80px 16px;
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 240px;
+  }
   &:not(:last-child) {
     gap: 60px;
   }
