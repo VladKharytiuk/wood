@@ -7,6 +7,8 @@
     flex-direction: row;
     justify-content: space-between;
     padding-top: 240px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
   &:not(:last-child) {
     gap: 60px;
@@ -43,9 +45,11 @@
 }
 .social-media {
   display: flex;
-  align-items: baseline;
+  justify-content: space-between;
   gap: 24px;
-  width: 208px;
+  @media screen and (min-width: $mobile) and (max-width: 1439px) {
+    justify-content: left;
+  }
 }
 .footer-icon {
   fill: rgba(255, 255, 255, 1);

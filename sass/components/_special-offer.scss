@@ -6,7 +6,13 @@
   padding-right: 16px;
   margin-top: 60px;
 }
-
+.offer-list {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+  }
+}
 .lisbon-section {
   overflow: hidden;
   background-image: url("/images/lisbon.jpg");
@@ -19,6 +25,9 @@
   @media screen and (min-width: $tablet) {
     background-image: url("/images/tablet/lisbon.jpg");
   }
+  @media screen and (min-width: $desktop) {
+    background-image: url("/images/desktop/lisbon@2x.jpg");
+  }
 }
 .lisbon-description {
   padding: 20px;
@@ -26,9 +35,6 @@
   border-bottom-right-radius: 26px;
   border-bottom-left-radius: 26px;
   margin-bottom: 60px;
-  @media screen and (min-width: $tablet) {
-    position: relative;
-  }
 }
 .lisbon-title {
   font-family: Muli, sans-serif;
@@ -96,9 +102,13 @@
   text-transform: uppercase;
   cursor: pointer;
   @media screen and (min-width: $tablet) {
-    position: absolute;
-    right: 24px;
-    bottom: 20px;
-    margin: 0;
+    margin-top: 0;
+  }
+}
+.price-container {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }

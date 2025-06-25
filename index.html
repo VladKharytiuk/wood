@@ -36,9 +36,31 @@
           </li>
         </ul>
       </header>
+      <header class="header-desktop container">
+        <a href="./index.html">
+          <svg class="svg-icon logo">
+            <use href="./images/symbol-defs.svg#icon-logo"></use></svg
+        ></a>
+        <nav class="header-nav">
+          <ul class="header-nav__links">
+            <li class="nav-link" class="nav-link">
+              <a href="./index.html">Home</a>
+            </li>
+            <li class="nav-link"><a href="#top">Explore</a></li>
+            <li class="nav-link"><a href="#top">Travel</a></li>
+            <li class="nav-link"><a href="#top">Blog</a></li>
+            <li class="nav-link"><a href="#top">Pricing</a></li>
+          </ul>
+        </nav>
+        <ul class="header-buttons">
+          <li><button class="login">Login</button></li>
+          <li><button class="sign-up">Sign up</button></li>
+        </ul>
+      </header>
       <h1 class="main-title container">
         Start your unforgettable journey with us.
       </h1>
+
       <p class="main-subtitle container">
         The best travel for your jouney begins now
       </p>
@@ -135,26 +157,113 @@
           <h2 class="title">Special Offer</h2>
           <p class="subtitle">Check out our special offer and discounts</p>
         </div>
-
-        <div class="offer-container lisbon-section"></div>
-        <div class="lisbon-description">
-          <div class="lisbon-header">
-            <p class="lisbon-title">Lisbon, Portugal</p>
-            <svg class="svg-rating">
-              <use href="./images/symbol-defs.svg#icon-rating"></use>
-            </svg>
+        <div class="offer-list add-container">
+          <div class="athens-container">
+            <picture>
+              <source
+                srcset="
+                  .\images\desktop\Athens.jpg    1x,
+                  .\images\desktop\Athens@2x.jpg 2x
+                "
+                media="(min-width:768px)"
+              />
+              <img src=".\images\desktop\Athens.jpg" alt="Athens" />
+            </picture>
+            <div class="lisbon-description">
+              <div class="lisbon-header">
+                <p class="lisbon-title">Lisbon, Portugal</p>
+                <svg class="svg-rating">
+                  <use href="./images/symbol-defs.svg#icon-rating"></use>
+                </svg>
+              </div>
+              <p class="lisbon-text">
+                5 nights and 4 days in 5 star hotel, breakfast and lunch
+                included. Very popular during the renaissance. Passage and going
+                through the cites of the world in classical literature.
+              </p>
+              <div class="price-container">
+                <div class="lisbon-price">
+                  <div>From</div>
+                  <span>€800</span>
+                </div>
+                <button class="lisbon-btn">Details</button>
+              </div>
+            </div>
           </div>
-          <p class="lisbon-text">
-            5 nights and 4 days in 5 star hotel, breakfast and lunch included.
-            Very popular during the renaissance. Passage and going through the
-            cites of the world in classical literature.
-          </p>
-          <div class="lisbon-price">
-            <div>From</div>
-            <span>€500</span>
+          <div class="athens-container">
+            <picture>
+              <source
+                srcset="
+                  .\images\desktop\Athens.jpg    1x,
+                  .\images\desktop\Athens@2x.jpg 2x
+                "
+                media="(min-width:768px)"
+              />
+              <img
+                src=".\images\desktop\Athens.jpg"
+                alt="Athens"
+                height="286px"
+              />
+            </picture>
+            <div class="lisbon-description">
+              <div class="lisbon-header">
+                <p class="lisbon-title">Athens, Greece</p>
+                <svg class="svg-rating">
+                  <use href="./images/symbol-defs.svg#icon-rating"></use>
+                </svg>
+              </div>
+              <p class="lisbon-text">
+                5 nights and 4 days in 5 star hotel, breakfast and lunch
+                included. Very popular during the renaissance. Passage and going
+                through the cites of the world in classical literature.
+              </p>
+              <div class="price-container">
+                <div class="lisbon-price">
+                  <div>From</div>
+                  <span>€800</span>
+                </div>
+                <button class="lisbon-btn">Details</button>
+              </div>
+            </div>
           </div>
-          <button class="lisbon-btn">Details</button>
+          <div class="venice-container">
+            <picture>
+              <source
+                srcset="
+                  .\images\desktop\venice.jpg    1x,
+                  .\images\desktop\venice@2x.jpg 2x
+                "
+                media="(min-width:768px)"
+              />
+              <img
+                src=".\images\desktop\Venice.jpg"
+                alt="Venice"
+                height="286px"
+              />
+            </picture>
+            <div class="lisbon-description">
+              <div class="lisbon-header">
+                <p class="lisbon-title">Athens, Greece</p>
+                <svg class="svg-rating">
+                  <use href="./images/symbol-defs.svg#icon-rating"></use>
+                </svg>
+              </div>
+              <p class="lisbon-text">
+                5 nights and 4 days in 5 star hotel, breakfast and lunch
+                included. Very popular during the renaissance. Passage and going
+                through the cites of the world in classical literature.
+              </p>
+              <div class="price-container">
+                <div class="lisbon-price">
+                  <div>From</div>
+                  <span>€750</span>
+                </div>
+                <button class="lisbon-btn">Details</button>
+              </div>
+            </div>
+          </div>
         </div>
+
         <div class="button-container">
           <button class="button back-btn">
             <svg class="arrow right-arrow">
@@ -476,58 +585,63 @@
       <div class="travel pad-container">
         <h2 class="title">Traveler’s Experiences</h2>
         <p class="subtitle">Here some awesome feedback from our travelers</p>
-        <div class="travel-feedback add-container">
-          <p class="travel-feedback__text">
-            But I must explain to you how all this mistaken idea of denouncing
-            pleasure and praising pain was born and I will give you a complete
-            account of the system and expound the actual teachings of the great
-            explorer of the truth, the master- builder of human happiness.
-          </p>
-          <svg class="svg-rating">
-            <use href="./images/symbol-defs.svg#icon-rating"></use>
-          </svg>
-          <div class="travel-feedback__author">
-            <h3>John Doe</h3>
-            <p>Accountant</p>
+        <div class="emotions">
+          <div class="travel-feedback add-container">
+            <p class="travel-feedback__text">
+              But I must explain to you how all this mistaken idea of denouncing
+              pleasure and praising pain was born and I will give you a complete
+              account of the system and expound the actual teachings of the
+              great explorer of the truth, the master- builder of human
+              happiness.
+            </p>
+            <svg class="svg-rating">
+              <use href="./images/symbol-defs.svg#icon-rating"></use>
+            </svg>
+            <div class="travel-feedback__author">
+              <h3>John Doe</h3>
+              <p>Accountant</p>
+            </div>
+            <div class="travel-avatar">
+              <img src="./images/Avatar.jpg" alt="John Doe" />
+            </div>
           </div>
-          <div class="travel-avatar">
-            <img src="./images/Avatar.jpg" alt="John Doe" />
+          <div class="travel-feedback add-container">
+            <p class="travel-feedback__text">
+              But I must explain to you how all this mistaken idea of denouncing
+              pleasure and praising pain was born and I will give you a complete
+              account of the system and expound the actual teachings of the
+              great explorer of the truth, the master- builder of human
+              happiness.
+            </p>
+            <svg class="svg-rating">
+              <use href="./images/symbol-defs.svg#icon-rating"></use>
+            </svg>
+            <div class="travel-feedback__author">
+              <h3>John Smith</h3>
+              <p>Journalist, HWO News</p>
+            </div>
+            <div class="travel-avatar">
+              <img src="./images/Smith.jpg" alt="John Smith" />
+            </div>
           </div>
-        </div>
-        <div class="travel-feedback">
-          <p class="travel-feedback__text">
-            But I must explain to you how all this mistaken idea of denouncing
-            pleasure and praising pain was born and I will give you a complete
-            account of the system and expound the actual teachings of the great
-            explorer of the truth, the master- builder of human happiness.
-          </p>
-          <svg class="svg-rating">
-            <use href="./images/symbol-defs.svg#icon-rating"></use>
-          </svg>
-          <div class="travel-feedback__author">
-            <h3>John Smith</h3>
-            <p>Journalist, HWO News</p>
-          </div>
-          <div class="travel-avatar">
-            <img src="./images/Smith.jpg" alt="John Smith" />
-          </div>
-        </div>
-        <div class="travel-feedback add-container">
-          <p class="travel-feedback__text">
-            But I must explain to you how all this mistaken idea of denouncing
-            pleasure and praising pain was born and I will give you a complete
-            account of the system and expound the actual teachings of the great
-            explorer of the truth, the master- builder of human happiness.
-          </p>
-          <svg class="svg-rating">
-            <use href="./images/symbol-defs.svg#icon-rating"></use>
-          </svg>
-          <div class="travel-feedback__author">
-            <h3>Tamara Bellis</h3>
-            <p>Managing Director, JTH</p>
-          </div>
-          <div class="travel-avatar">
-            <img src="./images/Bellis.jpg" alt="Tamara Bellis" />
+          <div class="travel-feedback add-container">
+            <p class="travel-feedback__text">
+              But I must explain to you how all this mistaken idea of denouncing
+              pleasure and praising pain was born and I will give you a complete
+              account of the system and expound the actual teachings of the
+              great explorer of the truth, the master- builder of human
+              happiness.
+            </p>
+            <svg class="svg-rating">
+              <use href="./images/symbol-defs.svg#icon-rating"></use>
+            </svg>
+            <div class="travel-feedback__author">
+              <h3>Tamara Bellis</h3>
+              <p>Managing Director, JTH</p>
+            </div>
+            <div class="travel-avatar">
+              <img src="./images/Bellis.jpg" alt="Tamara Bellis" />
+            </div>
           </div>
         </div>
         <!-- <div class="button-container">

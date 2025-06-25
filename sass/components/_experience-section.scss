@@ -51,3 +51,10 @@
   border-radius: 50%;
   object-fit: cover;
 }
+@media screen and (min-width: $desktop) {
+  .emotions {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+  }
+}
