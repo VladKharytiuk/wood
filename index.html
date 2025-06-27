@@ -53,8 +53,8 @@
           </ul>
         </nav>
         <ul class="header-buttons">
-          <li><button class="login">Login</button></li>
-          <li><button class="sign-up">Sign up</button></li>
+          <li><button aria-label="Login" class="login">Login</button></li>
+          <li><button aria-label="Signup" class="sign-up">Sign up</button></li>
         </ul>
       </header>
       <h1 class="main-title container">
@@ -162,8 +162,15 @@
             <picture>
               <source
                 srcset="
-                  .\images\desktop\Athens.jpg    1x,
-                  .\images\desktop\Athens@2x.jpg 2x
+                  .\images\desktop\lisbon.jpg    1x,
+                  .\images\desktop\lisbon@2x.jpg 2x
+                "
+                media="(min-width:1440px)"
+              />
+              <source
+                srcset="
+                  ./images/tablet/lisbon.jpg    1x,
+                  ./images/tablet/lisbon@2x.jpg 2x
                 "
                 media="(min-width:768px)"
               />
