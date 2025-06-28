@@ -89,7 +89,7 @@
 }
 .lisbon-btn {
   margin-top: 20px;
-  background-color: rgba(255, 118, 84, 1);
+  background-color: $btn-color;
   padding: 16px 24px;
   border: none;
   border-radius: 12px;
@@ -101,6 +101,10 @@
   letter-spacing: 0em;
   text-transform: uppercase;
   cursor: pointer;
+  transition: $transition;
+  &:hover {
+    background-color: $btn-hover-color;
+  }
   @media screen and (min-width: $tablet) {
     margin-top: 0;
   }
