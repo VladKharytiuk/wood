@@ -11,8 +11,10 @@
     display: flex;
     gap: 32px;
     justify-content: center;
+    align-items: center;
   }
 }
+
 .lisbon-section {
   overflow: hidden;
   background-image: url("/images/lisbon.jpg");
