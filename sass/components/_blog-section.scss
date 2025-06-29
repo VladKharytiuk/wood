@@ -51,5 +51,7 @@
   cursor: pointer;
 }
 .svg-arrow-right {
-  fill: rgba(255, 119, 87, 1);
+  fill: $btn-hover-color;
+  height: 20px;
+  width: 20px;
 }

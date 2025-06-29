@@ -46,7 +46,7 @@
 .social-media {
   display: flex;
   justify-content: space-between;
-  gap: 24px;
+  gap: 10px;
   @media screen and (min-width: $mobile) and (max-width: 1439px) {
     justify-content: left;
   }

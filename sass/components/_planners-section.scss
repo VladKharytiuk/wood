@@ -4,8 +4,7 @@
 .trip-list {
   @media screen and (min-width: $desktop) {
     display: flex;
-    justify-content: center;
-    gap: 32px;
+    justify-content: space-between;
   }
 }
 .square-container {
@@ -89,4 +88,3 @@
 .guide-thumb:last-child {
   margin-bottom: 80px;
 }
-
