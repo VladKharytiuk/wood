@@ -8,6 +8,7 @@
   @media screen and (min-width: $desktop) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    align-items: center;
   }
 }
 .svg-location {
