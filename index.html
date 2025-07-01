@@ -19,7 +19,7 @@
   </head>
   <body>
     <div class="header">
-      <header>
+      <header class="header-mobile">
         <ul class="header__items">
           <li>
             <a href="./index.html">
@@ -28,13 +28,40 @@
             ></a>
           </li>
           <li>
-            <button class="header__button">
+            <button
+              class="header__button"
+              type="button"
+              aria-expanded="false"
+              aria-label="Mobile menu button"
+              data-menu-button
+            >
               <svg class="svg-icon hamburger">
                 <use href="./images/symbol-defs.svg#icon-hamburger"></use>
               </svg>
             </button>
           </li>
         </ul>
+        <nav class="mobile-menu" data-menu>
+          <button
+            class="mobile-menu__close"
+            type="button"
+            aria-label="Close menu"
+            data-menu-button
+          >
+            &times;
+          </button>
+          <ul class="mobile-menu__list">
+            <li class="mb-links"><a href="./index.html">Home</a></li>
+            <li class="mb-links"><a href="#top">Explore</a></li>
+            <li class="mb-links"><a href="#top">Travel</a></li>
+            <li class="mb-links"><a href="#top">Blog</a></li>
+            <li class="mb-links"><a href="#top">Pricing</a></li>
+            <li><button aria-label="Login" class="login">Login</button></li>
+            <li>
+              <button aria-label="Signup" class="sign-up">Sign up</button>
+            </li>
+          </ul>
+        </nav>
       </header>
       <header class="header-desktop container">
         <a href="./index.html">
@@ -757,6 +784,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
     <script src="./js/date.js"></script>
   </body>
 </html>
