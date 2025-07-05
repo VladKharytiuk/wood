@@ -58,7 +58,9 @@ class CustomDatePicker {
   init() {
     // Set initial date
     const today = new Date();
-    this.input.value = today.toISOString().split("T")[0];
+    const todayStr = today.toISOString().split("T")[0];
+    this.input.value = todayStr;
+    this.input.setAttribute("min", todayStr); // Забороняємо вибір минулих дат
     this.setAndDisplayDate(today);
 
     // Add event listeners
