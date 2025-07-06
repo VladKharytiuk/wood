@@ -127,21 +127,35 @@ button {
 }
 
 .header {
-  background-image: url(/images/hero.jpg);
-  background-size: cover;
-  background-position: 10%;
+  position: relative;
   width: 100%;
-  background-repeat: no-repeat;
+  overflow: hidden;
   padding-bottom: 100px;
 }
+
+.header-background {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.3))), url(/images/hero.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3)), url(/images/hero.jpg);
+  background-size: cover;
+  width: 2400px;
+  height: 3000px;
+  background-repeat: no-repeat;
+}
 @media screen and (min-width: 768px) and (max-width: 1439px) {
-  .header {
-    background-position: bottom;
+  .header-background {
+    width: 1440px;
+    height: 1780px;
   }
 }
 @media screen and (min-width: 1440px) {
-  .header {
-    background-position: bottom center;
+  .header-background {
+    width: 2400px;
+    height: 3000px;
+    bottom: -80%;
   }
 }
 
@@ -478,12 +492,21 @@ body.no-scroll {
 }
 
 .booking-form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   width: 100%;
   padding-top: 12px;
   padding-bottom: 15px;
   border: none;
   border-bottom: 1px solid rgb(0, 0, 0);
   font-size: 16px;
+  background-color: white;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 1em;
+  padding-right: 2em;
 }
 
 .booking-form input {

@@ -13,7 +13,6 @@
   }
   @media screen and (min-width: $desktop) {
     grid-template-columns: repeat(4, 1fr);
-   
   }
 }
 .booking-form label {
@@ -27,12 +26,22 @@
   margin-bottom: 12px;
 }
 .booking-form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   width: 100%;
   padding-top: 12px;
   padding-bottom: 15px;
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 1);
   font-size: 16px;
+
+  background-color: white;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 1em;
+  padding-right: 2em;
 }
 .booking-form input {
   width: 100%;
