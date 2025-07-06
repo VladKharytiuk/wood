@@ -507,6 +507,7 @@ body.no-scroll {
   background-position: right 10px center;
   background-size: 1em;
   padding-right: 2em;
+  color: rgb(23, 36, 50);
 }
 
 .booking-form input {
