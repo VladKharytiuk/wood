@@ -498,6 +498,8 @@ body.no-scroll {
   width: 100%;
   padding-top: 12px;
   padding-bottom: 15px;
+  padding-right: 4px;
+  padding-left: 4px;
   border: none;
   border-bottom: 1px solid rgb(0, 0, 0);
   font-size: 16px;
@@ -506,8 +508,12 @@ body.no-scroll {
   background-repeat: no-repeat;
   background-position: right 10px center;
   background-size: 1em;
-  padding-right: 2em;
   color: rgb(23, 36, 50);
+  font-family: Playfair Display, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0em;
 }
 
 .booking-form input {
@@ -547,17 +553,11 @@ body.no-scroll {
   cursor: pointer;
   position: relative;
   text-align: left;
-}
-
-.date-input-custom::after {
-  content: "⌃";
-  rotate: 180deg;
-  position: absolute;
-  right: 5px;
-  top: 10%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  font-size: 22px;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 1em;
+  padding-right: 2em;
 }
 
 .date-label {
